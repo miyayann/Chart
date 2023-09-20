@@ -68,7 +68,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="w-3/4 mx-auto">
+      <div className="w-full sm:w-3/4 sm:h-3/4 h-full mx-auto">
       {isLoading ? (
           <div>Loading...(ログインしてください)</div> 
         ) : (
@@ -76,7 +76,7 @@ export default function Home() {
         { user ? (
           <>
               <WeightChart newWeight={newWeight} />
-              <div className="flex justify-between mt-5">
+              <div className="sm:flex justify-between mt-5">
               <WeightForm />
               <SwitchBox 
               Count={messages} 

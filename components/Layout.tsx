@@ -28,9 +28,9 @@ const Layout = ({ children }: LayoutProps) => {
           <div>Loading...</div> // ローディング表示
         ) : (
           user ? 
-          <div className="flex w-3/4 mx-auto justify-between">
-              <h1 className="text-4xl font-sans font-bold">体重グラフ</h1>
-              <h1 className="text-3xl">{displayName}さん</h1>
+          <div className="flex w-3/4 mx-auto justify-between items-center">
+              <h1 className="sm:text-4xl text-lg font-sans font-bold">体重グラフ</h1>
+              <h1 className="text-3xl sm:block hidden">{displayName}さん</h1>
               <div>
                 <LogoutForm/>
               </div> 

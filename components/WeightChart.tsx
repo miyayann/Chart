@@ -56,9 +56,13 @@ const WeightChart = ({ newWeight }: WeightChartProps) => {
 
   
   return (
-    <div className="mx-5 mt-8">
-      <div className='mx-auto max-w-min'>
-        <Line data={data} options={options} width={1000} height={500}/>
+    <div>
+      <div className='mx-auto max-w-min sm:w-11/12 sm:h-5/6'>
+        <Line data={data} 
+        options={options} 
+        width={window.innerWidth > 600 ? 1400 : window.innerWidth - 20}
+        height={window.innerWidth > 600 ? 800 : 400}
+        />
       </div>
     </div>
   );
